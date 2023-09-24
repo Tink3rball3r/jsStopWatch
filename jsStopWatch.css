@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #279eff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	width: 40%;
+	min-width: 50rem;
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 3.5rem 0 5rem 0;
+}
+
+.timer-display {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Roboto mono', monospace;
+	font-size: 4rem;
+	padding: 4rem 3rem;
+	color: #0381bb;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+.buttons {
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.buttons button {
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	border-radius: 1.5rem;
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	color: #fff;
+	padding: 1rem 0;
+	width: 30%;
+	box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+button#pauseTimer {
+	background-color: #fe0000;
+}
+button#startTimer {
+	background-color: #2b7a0b;
+}
+button#resetTimer {
+	background-color: #2192ff;
+}
